@@ -13,5 +13,5 @@ export const IconContacts = () => {
 
 const StyledIconContacts = styled.section`
     display:flex;
-    gap:5px
+    gap:20px
 `

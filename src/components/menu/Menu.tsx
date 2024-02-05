@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {Theme} from "../../styles/Theme";
 
 
 
@@ -14,7 +15,7 @@ export const Menu = (props: {MenuItems: Array<string>; type: "link" | "text"}) =
                         if (props.type === "link") {
                             return( 
                                 <li>
-                                    <a key={index} href="">{item}</a>
+                                    <a key={index} href="#">{item}</a>
                                     </li> 
                             )
                         } else {
@@ -32,6 +33,15 @@ export const Menu = (props: {MenuItems: Array<string>; type: "link" | "text"}) =
 const StyledMenu = styled.nav`
     ul {
         display: flex;
-        gap: 30px
+        gap: 50px
+    }
+
+    a {
+      color: ${Theme.colors.secondary};
+      font-family: "DM Sans", serif;
+      font-size: 20px;
+      &:hover{
+        color: ${Theme.colors.primary};
+      }
     }
 `

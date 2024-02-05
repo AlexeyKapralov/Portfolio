@@ -1,4 +1,6 @@
 import IconsSprite from '../../assets/images/icons-sprite.svg'
+import {Theme} from "../../styles/Theme";
+import styled from "styled-components";
 
 type IconPropsType = {
     iconId: string
@@ -9,8 +11,17 @@ type IconPropsType = {
 
 export const Icon = (props: IconPropsType) => {
     return (
-        <svg width={props.width || "130"} height={props.height || "130"} viewBox={props.viewBox || "0 0 130 130"} xmlns="http://www.w3.org/2000/svg">
+        <Svg width={props.width || "130"} height={props.height || "130"} viewBox={props.viewBox || "0 0" +
+            " 130" +
+            " 130"} xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref={ `${IconsSprite}#${props.iconId}` } />
-        </svg>
+        </Svg>
     )
 }
+
+const Svg = styled.svg`
+  fill: ${Theme.colors.secondary};
+  &:hover{
+    fill: ${Theme.colors.primary};
+  }
+`
