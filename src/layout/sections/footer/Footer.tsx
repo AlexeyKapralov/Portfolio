@@ -12,5 +12,8 @@ export const Footer = () => {
 }
 
 const StyledFooter = styled.section`
-    background-color: aquamarine
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding-bottom: 70px;
 `

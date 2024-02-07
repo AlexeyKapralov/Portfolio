@@ -82,7 +82,6 @@ export const MyProjects = () => {
 
 const StyledMyProjects = styled.section`
     
-background-color: pink
 `
 
 const ProjectBox = styled.div`

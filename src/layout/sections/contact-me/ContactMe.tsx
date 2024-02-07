@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {Theme} from "../../../styles/Theme";
 
 export const ContactMe = () => {
     return (
@@ -12,17 +13,30 @@ export const ContactMe = () => {
 }
 
 const StyledContactMe = styled.section`
-    display: flex;
-    flex-direction: column;
-    justify-contact: center;
-    align-items: center;
-    background-color: orange
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const Text = styled.h2`
-
+  color: ${Theme.colors.primary};
+  font-family: "DM Sans", serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
 `
 
 const Contact = styled.h2`
-
+  background: ${Theme.colors.accentColor};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-family: "DM Sans", serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
 `

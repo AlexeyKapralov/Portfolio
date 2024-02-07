@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import { Icon } from "../../../components/icon/Icon"
-import { Title } from "../../../components/title/Title"
+import {Icon} from "../../../components/icon/Icon"
+import {Title} from "../../../components/title/Title"
+import {Theme} from "../../../styles/Theme";
 
 export const MyStack = () => {
     return (
@@ -10,7 +11,7 @@ export const MyStack = () => {
                 <Icon iconId="html" height="120" width="120"/>
                 <Icon iconId="css" height="120" width="120"/>
                 <Icon iconId="js" height="120" width="120"/>
-                <Icon iconId="react" width="113" height="101" />
+                <Icon iconId="react" width="113" height="101"/>
                 <Icon iconId="vector" height="100" width="105"/>
                 <Icon iconId="bootstrap" width="88" height="87"/>
                 <Icon iconId="tailwind" width="131" height="131"/>
@@ -25,14 +26,13 @@ export const MyStack = () => {
 }
 
 const IconsBox = styled.div`
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 100px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 100px;
 `
 
 const StyledMyStack = styled.section`
-background-color: lightblue
 
 `

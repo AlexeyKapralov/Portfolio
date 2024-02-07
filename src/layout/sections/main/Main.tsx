@@ -30,7 +30,6 @@ const StyledMain = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: ${Theme.colors.primarybg};
   height: 100vh;
 
 `

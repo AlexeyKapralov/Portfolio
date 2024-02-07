@@ -34,7 +34,6 @@ const StyledHeader = styled.header`
 `
 
 const ContainerHeader = styled.div`
-  background-color: ${Theme.colors.primarybg};
   max-width: 1223px;
   display: flex;
   margin: 0 auto;

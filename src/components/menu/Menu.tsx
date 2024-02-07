@@ -36,11 +36,11 @@ const StyledMenu = styled.nav`
         gap: 50px
     }
 
-    a {
+    a, li {
       color: ${Theme.colors.secondary};
       font-family: "DM Sans", serif;
       font-size: 20px;
-      &:hover{
+      a:hover{
         color: ${Theme.colors.primary};
       }
     }
