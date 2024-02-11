@@ -8,5 +8,10 @@ export const Theme = {
         primarybg: '#191919',
         secondarbg: '#363636',
         dividerColor: '#42446E'
+    },
+
+    media: {
+      mobile: 'screen and {max-width: 576px}',
+      tablet: 'screen and {max-width: 768px}'
     }
 }
